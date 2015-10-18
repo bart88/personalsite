@@ -13,11 +13,15 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "assets/js/contrib",
     "test",
     "tests"
   ],
   "dependencies": {
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5"
+  },
+  "install" : {
+    "path" : "assets/js/contrib"
   }
 }
