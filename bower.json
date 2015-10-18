@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-site-frontend",
+  "description": "A packaged frontend for portfolio type sites",
+  "main": "",
+  "authors": [
+    "bart88 <cjbarton01@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bart88/personalsite",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
