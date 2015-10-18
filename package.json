@@ -9,6 +9,7 @@
     "del": "^1.1.1",
     "eslint": "^0.20.0",
     "gulp": "~3.9.0",
+    "gulp-cli": "^0.3.0",
     "gulp-compass": "~2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-dest": "^0.2.2",

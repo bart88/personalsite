@@ -12,10 +12,10 @@ var paths = {
 
 
 // Default / main task
-gulp.task('default', function(cb)) {
+gulp.task('default', function(cb) {
   // run sass, run lint , build javascripts
-  runSequence('styles:prod', 'lint', 'javascripts' cb);
-}
+  runSequence('styles:prod', 'lint', 'javascripts', cb);
+});
 
 // CSS / SASS BUILD
 gulp.task('styles:dev', function(){
@@ -68,7 +68,7 @@ gulp.task('js:contrib', function(){
       .pipe(gulp.dest(paths.assets + 'js'));
 });
 
-gulp.task('js:contrib', function(){
+gulp.task('js:plugins', function(){
     return gulp.src(paths.assets + '/js/plugins/*')
       .pipe($.filter('*.js'))
       .pipe($.concat('plugins.js'))
@@ -76,7 +76,7 @@ gulp.task('js:contrib', function(){
       .pipe(gulp.dest(paths.assets + 'js'));
 });
 
-gulp.task('js:contrib', function(){
+gulp.task('js:app', function(){
     return gulp.src(paths.assets + '/js/app/*')
       .pipe($.filter('*.js'))
       .pipe($.concat('main.js'))
