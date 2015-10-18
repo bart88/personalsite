@@ -6,7 +6,7 @@
   "devDependencies": {
     "bower": "^1.6.x",
     "browser-sync": "~2.9.3",
-    "del": "^1.1.1",
+    "del": "^2.0.2",
     "eslint": "^0.20.0",
     "gulp": "~3.9.0",
     "gulp-cli": "^0.3.0",

@@ -61,7 +61,7 @@ gulp.task('javascripts', function(cb){
 });
 
 gulp.task('js:contrib', function(){
-    return gulp.src(paths.assets + '/js/contrib/*')
+    gulp.src(paths.assets + '/js/contrib/*')
       .pipe($.filter('*.js'))
       .pipe($.concat('libs.js'))
       .pipe($.uglify())
@@ -69,7 +69,7 @@ gulp.task('js:contrib', function(){
 });
 
 gulp.task('js:plugins', function(){
-    return gulp.src(paths.assets + '/js/plugins/*')
+    gulp.src(paths.assets + '/js/plugins/*')
       .pipe($.filter('*.js'))
       .pipe($.concat('plugins.js'))
       .pipe($.uglify())
@@ -77,7 +77,7 @@ gulp.task('js:plugins', function(){
 });
 
 gulp.task('js:app', function(){
-    return gulp.src(paths.assets + '/js/app/*')
+    gulp.src(paths.assets + '/js/app/*')
       .pipe($.filter('*.js'))
       .pipe($.concat('main.js'))
       .pipe($.uglify())
