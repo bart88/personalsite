@@ -1,4 +1,12 @@
 {
-
+  "name" : "personal site frontend",
+  "version" : "1.0.0",
+  "author" : "bart88 <cjbarton01@gmail.com>",
+  "description" : "A packaged frontend for portfolio type sites",
+  "devDependencies" : {
+    "eslint" : "^0.20.0",
+    "bower" : "^1.6.x"
+  },
+  "private" : true,
+  "scripts" : {}
 }
-
