@@ -10,6 +10,11 @@ var paths = {
   css: __dirname + '/css'
 }
 
+ // Concatenate JS Files
+ // This one works
+ gulp.task('js', function() {
+
+ });
 
 // Default / main task
 gulp.task('default', function(cb) {
@@ -61,27 +66,24 @@ gulp.task('javascripts', function(cb){
 });
 
 gulp.task('js:contrib', function(){
-    gulp.src(paths.assets + '/js/contrib/*')
-      .pipe($.filter('*.js'))
-      .pipe($.concat('libs.js'))
+    gulp.src(paths.assets + '/js/contrib/**/*.js')
       .pipe($.uglify())
-      .pipe(gulp.dest(paths.assets + 'js'));
+      .pipe($.concat('libs.js'))
+      .pipe(gulp.dest(paths.assets + '/js'));
 });
 
 gulp.task('js:plugins', function(){
-    gulp.src(paths.assets + '/js/plugins/*')
-      .pipe($.filter('*.js'))
-      .pipe($.concat('plugins.js'))
+    gulp.src(paths.assets + '/js/plugins/**/*.js')
       .pipe($.uglify())
-      .pipe(gulp.dest(paths.assets + 'js'));
+      .pipe($.concat('plugins.js'))
+      .pipe($.dest(paths.assets + '/js'));
 });
 
 gulp.task('js:app', function(){
-    gulp.src(paths.assets + '/js/app/*')
-      .pipe($.filter('*.js'))
-      .pipe($.concat('main.js'))
+    gulp.src(paths.assets + '/js/app/**/*.js')
       .pipe($.uglify())
-      .pipe(gulp.dest(paths.assets + 'js'));
+      .pipe($.concat('main.js'))
+      .pipe($.dest(paths.assets + '/js'));
 });
 
 // Browser sync to watch for tasks and rebuild
